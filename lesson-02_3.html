@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var loggin;
+    var password;
+    loggin = prompt('Who\'s there?',"user")
+    switch (loggin){
+      case "Admin":
+        password = prompt('Password',"enter your password");
+        switch (password) {
+          case "TheMaster":
+            alert('Welcome')
+            break;
+          case "Cancel":
+            alert('Canceled');
+            break;
+          default:
+          alert('Wrong password');
+        }
+      break;
+      case "Cancel":
+        alert('Canceled');
+        break;
+      default:
+        alert('I dont\'t know you');
+    }
+  </script>
+</body>
+</html>
